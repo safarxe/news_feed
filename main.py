@@ -36,6 +36,9 @@ for news in news_list:
 rss_feed = fg.rss_str(pretty=True).decode('utf-8')  # bytes-dən str-ə çevirmək
 with open("news_feed.xml", "w", encoding="utf-8") as f:
     f.write(rss_feed)
+# Faylı 'public' qovluğuna yazmaq
+with open("public/news_feed.xml", "w", encoding="utf-8") as f:
+    f.write(rss_feed)
 
 print("✅ RSS feed yaradıldı: news_feed.xml")
 
