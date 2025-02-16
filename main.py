@@ -17,9 +17,9 @@ news_list = data.get("articles", [])
 
 # RSS Feed Generator
 fg = FeedGenerator()
-fg.id("https://yourrssfeed.com")
+fg.id("https://news-feed-gules.vercel.app/")
 fg.title("Mənim Xəbər RSS Feedim")
-fg.link(href="https://yourrssfeed.com", rel="self")
+fg.link(href="https://news-feed-gules.vercel.app/", rel="self")
 fg.description("Bu feed avtomatik olaraq Google News API-dən yaradılıb.")
 fg.language("az")
 
